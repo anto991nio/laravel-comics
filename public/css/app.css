@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+}
+
+.container {
+  width: 1250px;
+  margin: auto;
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.inverse {
+  flex-direction: row-reverse;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #0282f9;
+  padding: 10px;
+  font-size: 8px;
+}
+
+.bg-blue p {
+  margin-right: 40px;
+}
+
+nav {
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+nav img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 13px;
+}
+
+nav ul li a {
+  color: #464646;
+  text-decoration: none;
+  font-size: 10px;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+}
+
+nav input {
+  border: none;
+  width: 100px;
+}
+
+nav .cerca {
+  border-bottom: 2px solid #0282f9;
+}
+
+nav .active {
+  border-bottom: 4px solid #0282f9;
+  color: #0282f9;
+}
+
+.hero {
+  padding: 200px;
+  position: relative;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  z-index: 2;
+}
+
+footer {
+  position: relative;
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer-menu {
+  padding: 50px 0;
+  color: white;
+}
+
+footer .footer-menu h3 {
+  margin: 20px 0;
+}
+
+footer .footer-menu ul {
+  list-style: none;
+}
+
+footer .footer-menu ul li {
+  line-height: 20px;
+}
+
+footer .footer-menu ul li a {
+  color: #959595;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+footer .footer-menu p {
+  margin-top: 20px;
+  color: #959595;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+footer .footer-menu p a {
+  text-decoration: none;
+  color: #0282f9;
+}
+
+.posizione {
+  position: absolute;
+  top: -100px;
+  bottom: -50px;
+  right: 0;
+}
+
+.centerfoot {
+  margin: 0 20px;
+}
+
+.sign {
+  background-color: #303030;
+  padding: 30px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.sign .d-flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #0282f9;
+  padding: 10px;
+}
+
+.sign ul {
+  list-style: none;
+}
+
+.sign ul strong {
+  color: #0282f9;
+}
+
+.sign ul li a {
+  border: none;
+}
+
