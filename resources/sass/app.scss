@@ -91,7 +91,7 @@ footer{
         padding: 50px 0;
         color: white;
         h3{
-            margin: 20px 0;
+            margin: 0px 0 20px 0;
         }
         ul{
             list-style: none;
@@ -158,5 +158,88 @@ footer{
             }
         }
     }
+
+}
+
+.card-container{
+    background-color: black;
+    z-index: 2;
+    position: relative;
+
+    .container{
+        flex-wrap: wrap;
+        padding: 40px 0;
+        position: relative;
+
+
+        .card{
+            width: calc(100% / 6);
+            color: white;
+            padding: 0 5px;
+            .card-img{
+                height: 175px;
+                width: 175px;
+                overflow: hidden;
+               
+                   
+                    
+                
+               
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+.titolo{
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.current{
+    position: absolute;
+    background-color: rgb(2, 130, 249);
+    color: white;
+    padding: 10px;
+    top: -20px;
+}
+
+.load{
+    background-color: rgb(2, 130, 249);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 150px;
+}
+
+.mid-bar{
+    background-color: rgb(2, 130, 249);
+    z-index: 2;
+    position: relative;
+    padding: 50px 0;
+    .card-mid{
+        width: calc(100% / 5);
+        height: 80px;
+        line-height: 80px;
+        img{
+            height: 100%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+    }
+
 
 }
