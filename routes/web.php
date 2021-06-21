@@ -20,4 +20,16 @@ Route::get('/', function () {
         "comicsList" => $datiComics    ];
 
     return view("home", $datiView );  
-});
+})->name('pagina-home');
+
+
+Route::get("/comic/{index}", function ($index) {
+    $datiComics = config("comics");
+    if (!is_numeric($index) || $index < 0 || $index > count($datiComics) - 1) {
+        abort(404, "Fumetto inesistente");
+    }
+    $comicSelezionato = $datiComics[intval($index)];
+    return view("singlecomic", [
+        "comic" => $comicSelezionato
+    ]);
+})->name("pagina-single-Comic");

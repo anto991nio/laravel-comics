@@ -8,15 +8,15 @@
         <h3>CURRENT SERIES</h3>
         </div>
 
-        @foreach($comicsList as $comic)
+        @foreach($comicsList as $key => $comic)
 
         <div class="card">
             <div class="card-img">
-            <a href="#">
+            <a href="{{ route('pagina-single-Comic', ['index' => $key]) }}">
             <img src="{{ $comic['thumb'] }}" alt="">
             </a>
             </div>
-            <a href="#" class="titolo">
+            <a href="{{ route('pagina-single-Comic', ['index' => $key]) }}" class="titolo">
             <p class="titolo"><strong > {{ $comic['title'] }}</strong></p>
             </a>
         </div>

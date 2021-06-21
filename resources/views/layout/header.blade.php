@@ -11,8 +11,8 @@
             <img src="{{asset('img\dc-logo.png')}}" alt="">
             <ul class="d-flex">
                 <li><strong><a href="">CHARACTERS</a> </strong></li>
-                <li><strong><a href="" class="active">COMICS</a></strong></li>
-                <li><strong><a href="">MOVIES</a></strong></li>
+                <li><strong><a href="{{ route('pagina-home') }}" class="{{Request::route()->getName() == 'pagina-home' ? 'active': ''}}">COMICS</a></strong></li>
+                <li><strong><a href="" >MOVIES</a></strong></li>
                 <li><strong><a href="">TV</a></strong></li>
                 <li><strong><a href="">GAMES</a></strong></li>
                 <li><strong><a href="">COLLECTIBLES</a></strong></li>

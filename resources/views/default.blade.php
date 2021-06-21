@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{{asset('img\favicon.ico')}}" type="image/x-icon" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{asset('css\app.css')}}">
-    <title>DC-COMICS</title>
+    <title>Comics | DC</title>
 </head>
 <body>
     @include('layout.header')
