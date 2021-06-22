@@ -12,11 +12,11 @@
 
         <div class="card">
             <div class="card-img">
-            <a href="{{ route('pagina-single-Comic', ['index' => $key]) }}">
+            <a href="{{ route('pagina-comic-single', ['index' => $key]) }}">
             <img src="{{ $comic['thumb'] }}" alt="">
             </a>
             </div>
-            <a href="{{ route('pagina-single-Comic', ['index' => $key]) }}" class="titolo">
+            <a href="{{ route('pagina-comic-single', ['index' => $key]) }}" class="titolo">
             <p class="titolo"><strong > {{ $comic['title'] }}</strong></p>
             </a>
         </div>

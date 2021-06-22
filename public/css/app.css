@@ -308,12 +308,91 @@ footer .footer-menu p a {
 .talent,
 .specs {
   width: 50%;
+  padding: 0 30px;
+}
+
+.talent > *,
+.specs > * {
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .tal-specs {
   background-color: #f6f6f6;
-  padding: 30px;
+  padding: 30px 30px 80px 30px;
   z-index: 2;
   position: relative;
+  font-size: 12px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.tal-specs span {
+  margin: 10px 0;
+}
+
+.credits {
+  width: 30%;
+}
+
+.people {
+  width: 70%;
+  color: #0282f9;
+  margin: 10px 0;
+}
+
+.cta-icons {
+  border-top: 1px solid #e3e3e3;
+  background-color: #f6f6f6;
+  z-index: 2;
+  position: relative;
+}
+
+.cta-icons .container .d-flex {
+  width: 25%;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  color: #e3e3e3;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.cta-icons .container .d-flex .img-4 {
+  width: 50px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 34%;
+     object-position: 34%;
+}
+
+.cta-icons .container .d-flex .img-3 {
+  width: 50px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 67%;
+     object-position: 67%;
+}
+
+.cta-icons .container .d-flex .img-2 {
+  width: 50px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 95%;
+     object-position: 95%;
+}
+
+.cta-icons .container .d-flex .img-1 {
+  width: 50px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0%;
+     object-position: 0%;
+}
+
+.cta-icons .container .d-flex div {
+  height: 50px;
+  overflow: hidden;
 }
 

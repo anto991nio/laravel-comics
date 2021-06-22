@@ -17,10 +17,11 @@ Route::get('/', function () {
     $datiComics = config("comics");
 
     $datiView = [
-        "comicsList" => $datiComics    ];
+        "comicsList" => $datiComics
+    ];
 
-    return view("home", $datiView );  
-})->name('pagina-home');
+    return view("home", $datiView);
+})->name('pagina-comic');
 
 
 Route::get("/comic/{index}", function ($index) {
@@ -32,4 +33,42 @@ Route::get("/comic/{index}", function ($index) {
     return view("singlecomic", [
         "comic" => $comicSelezionato
     ]);
-})->name("pagina-single-Comic");
+})->name("pagina-comic-single");
+
+Route::get('/characteres', function () {
+
+    return view("characteres");
+})->name('characteres');
+
+Route::get('/movies', function () {
+
+    return view("movies");
+})->name('movies');
+Route::get('/fans', function () {
+
+    return view("fans");
+})->name('fans');
+Route::get('/shop', function () {
+    
+    return view("shop");  
+})->name('shop');
+Route::get('/videos', function () {
+    
+    return view("videos");  
+})->name('videos');
+Route::get('/tv', function () {
+    
+    return view("tv");  
+})->name('tv');
+Route::get('/news', function () {
+    
+    return view("news");  
+})->name('news');
+Route::get('/collectibles', function () {
+    
+    return view("collectibles");  
+})->name('collectibles');
+Route::get('/games', function () {
+    
+    return view("games");  
+})->name('games');

@@ -10,16 +10,16 @@
         <nav class="d-flex container">
             <img src="{{asset('img\dc-logo.png')}}" alt="">
             <ul class="d-flex">
-                <li><strong><a href="">CHARACTERS</a> </strong></li>
-                <li><strong><a href="{{ route('pagina-home') }}" class="{{Request::route()->getName() == 'pagina-home' ? 'active': ''}}">COMICS</a></strong></li>
-                <li><strong><a href="" >MOVIES</a></strong></li>
-                <li><strong><a href="">TV</a></strong></li>
-                <li><strong><a href="">GAMES</a></strong></li>
-                <li><strong><a href="">COLLECTIBLES</a></strong></li>
-                <li><strong><a href="">VIDEOS</a></strong></li>
-                <li><strong><a href="">FANS</a></strong></li>
-                <li><strong><a href="">NEWS</a></strong></li>
-                <li><strong><a href="">SHOP &#xf078;</a></strong></li>
+                <li><strong><a href="{{ route('characteres') }}" class="{{Request::route()->getName() == 'characteres' ? 'active': ''}}">CHARACTERS</a> </strong></li>
+                <li><strong><a href="{{ route('pagina-comic') }}" class="{{Request::route()->getName() == 'pagina-comic' ? 'active': ''}}">COMICS</a></strong></li>
+                <li><strong><a href="{{ route('movies') }}" class="{{Request::route()->getName() == 'movies' ? 'active': ''}}" >MOVIES</a></strong></li>
+                <li><strong><a href="{{ route('tv') }}" class="{{Request::route()->getName() == 'tv' ? 'active': ''}}">TV</a></strong></li>
+                <li><strong><a href="{{ route('games') }}" class="{{Request::route()->getName() == 'games' ? 'active': ''}}">GAMES</a></strong></li>
+                <li><strong><a href="{{ route('collectibles') }}" class="{{Request::route()->getName() == 'collectibles' ? 'active': ''}}">COLLECTIBLES</a></strong></li>
+                <li><strong><a href="{{ route('videos') }}" class="{{Request::route()->getName() == 'videos' ? 'active': ''}}">VIDEOS</a></strong></li>
+                <li><strong><a href="{{ route('fans') }}" class="{{Request::route()->getName() == 'fans' ? 'active': ''}}">FANS</a></strong></li>
+                <li><strong><a href="{{ route('news') }}" class="{{Request::route()->getName() == 'news' ? 'active': ''}}">NEWS</a></strong></li>
+                <li><strong><a href="{{ route('shop') }}" class="{{Request::route()->getName() == 'shop' ? 'active': ''}}">SHOP &#xf078;</a></strong></li>
             </ul>
             <div class="cerca">
                 <input type="text" name="" id="" placeholder="               Search ">
